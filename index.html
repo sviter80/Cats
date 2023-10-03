@@ -5,14 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position:fixed; width:100%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Меню</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Выпадающий список
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#point1">1. По телосложению</a></li>
+              <li><a class="dropdown-item" href="#point2">2.По типу шёрстяного покрова</a></li>
+              <li><a class="dropdown-item" href="#point3">3.По типу окраса</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 4em;">
     <div class="row">
-      <h1>Породы кошек и виды котов</h1>
+      <h1 >Породы кошек и виды котов</h1>
       <p>Мир кошек удивительно многолик. На сегодняшний день существует более двухсот официально признанных
         кошачьих пород. Чтобы легко ориентироваться во всём многообразии, необходимо понять принципы
         классификации этих млекопитающих.
@@ -34,7 +59,7 @@
     </div>
     <div class="row">
       <div class="col-6">
-        <h2>1. По телосложению</h2>
+        <h2 id="point1">1. По телосложению</h2>
         <img src="https://www.purina.ru/sites/default/files/2018-02/breed-01.jpg" style="width: 100%">
       </div>
       <div class="col-6">
@@ -49,7 +74,7 @@
       </div>
     </div>
     <div class="row">
-      <h2>2.По типу шёрстного типа:</h2>
+      <h2 id="point2">2.По типу шёрстяного покрова:</h2>
       <div class="col-4">
         <img src="photo\breed-02.jpg" style="width: 100%">
         <p>Бурманская кошка не сложна в уходе, поскольку имеет минимальный подшёрсток, не позволяющий спутываться шерсти
@@ -82,22 +107,27 @@
     <div class="row">
       <div class="col-4">
         <img src="photo\breed-05.jpg" style="width: 100%">
-        <p>Американские жесткошёрстные кошки отличаются волнистой шерстью. Эффект «проволочной шубки» создают шерстинки на бёдрах, хвосте, голове и хребте, 
+        <p>Американские жесткошёрстные кошки отличаются волнистой шерстью. Эффект «проволочной шубки» создают шерстинки
+          на бёдрах, хвосте, голове и хребте,
           которые либо надломлены, либо загнуты и скреплены между собой.
-           Животных этой породы расчёсывать не рекомендуется даже после купания, иначе «пружинки» шерсти исчезнут, и животное потеряет свой шарм и обаяние.</p>
+          Животных этой породы расчёсывать не рекомендуется даже после купания, иначе «пружинки» шерсти исчезнут, и
+          животное потеряет свой шарм и обаяние.</p>
       </div>
       <div class="col-4">
         <img src="photo\breed-06.jpg" style="width: 100%">
-        <p>Одни считают, что сфинксы – это лучшие кошки в мире, другие совершенно не понимают, как можно хотя бы приблизиться к такому животному, не говоря уже о том, чтобы погладить его.
-           Тем не менее, сфинксам нужна ласка и внимание. А ещё они нуждаются в тепле: бесшёрстные кошки часто мёрзнут, и чтобы согреться, 
-           могут лечь на батарею или прислониться к работающей духовке, что чревато ожогами нежной кошачьей кожи.
-           Поэтому владельцу сфинкса необходимо позаботиться о тёплой лежанке для питомца и о том, чтобы в доме не было сквозняков.</p>
+        <p>Одни считают, что сфинксы – это лучшие кошки в мире, другие совершенно не понимают, как можно хотя бы
+          приблизиться к такому животному, не говоря уже о том, чтобы погладить его.
+          Тем не менее, сфинксам нужна ласка и внимание. А ещё они нуждаются в тепле: бесшёрстные кошки часто мёрзнут, и
+          чтобы согреться,
+          могут лечь на батарею или прислониться к работающей духовке, что чревато ожогами нежной кошачьей кожи.
+          Поэтому владельцу сфинкса необходимо позаботиться о тёплой лежанке для питомца и о том, чтобы в доме не было
+          сквозняков.</p>
       </div>
       <div class="col-4">>
       </div>
 
       <div class="row">
-        <h2>3.По типу окраса:</h2>
+        <h2  id="point3">3.По типу окраса:</h2>
         <div class="col-6">
           <h3>одноцветные (гавана)</h3>
           <img src="photo\breed-07_2 (1).jpg" style="width: 100%">
@@ -114,6 +144,15 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
